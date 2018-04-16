@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67112BF0B0872D689F82BFE7 /* libPods-AerialMobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5F1E51254601E95D20A7F0 /* libPods-AerialMobile.a */; };
+		9F93A2021B41DB640022DB88 /* ui-settingsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A1FA1B41DB640022DB88 /* ui-settingsIcon@2x.png */; };
+		9F93A2031B41DB650022DB88 /* ui-tunerIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A1FB1B41DB640022DB88 /* ui-tunerIcon@2x.png */; };
+		9F93A2041B41DB650022DB88 /* tuner-smallGreenLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A1FC1B41DB640022DB88 /* tuner-smallGreenLogo.png */; };
+		9F93A2051B41DB650022DB88 /* tuner-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A1FD1B41DB640022DB88 /* tuner-bg@2x.png */; };
+		9F93A2071B41DB650022DB88 /* tuner-moreStationsIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A1FF1B41DB640022DB88 /* tuner-moreStationsIndicator@2x.png */; };
+		9F93A2081B41DB650022DB88 /* tuner-currentStationIndicator-Shine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A2001B41DB640022DB88 /* tuner-currentStationIndicator-Shine@2x.png */; };
+		9F93A2091B41DB650022DB88 /* tuner-currentStationIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A2011B41DB640022DB88 /* tuner-currentStationIndicator@2x.png */; };
+		9F93A20C1B41DCE70022DB88 /* ui-logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A20B1B41DCE70022DB88 /* ui-logo@2x.png */; };
+		9F93A2111B41DE840022DB88 /* TunerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F93A2101B41DE840022DB88 /* TunerViewController.m */; };
+		9F93A2131B41DEFA0022DB88 /* tuner-moreStationsIndicator-left@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A2121B41DEFA0022DB88 /* tuner-moreStationsIndicator-left@2x.png */; };
+		9F93A2151B4233290022DB88 /* tuner-tuningWheelDot@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A2141B4233290022DB88 /* tuner-tuningWheelDot@2x.png */; };
+		9F93A2171B42597B0022DB88 /* tuner-dialwheel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F93A2161B42597B0022DB88 /* tuner-dialwheel@2x.png */; };
+		9FB70E7C1B38DFD700AB875F /* StationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB70E7B1B38DFD700AB875F /* StationTableViewCell.m */; };
+		9FB70E7F1B38E13600AB875F /* StationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB70E7E1B38E13600AB875F /* StationsTableViewController.m */; };
+		9FCDEA8C1B3A2B1400D87197 /* StationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDEA8B1B3A2B1400D87197 /* StationDetailsViewController.m */; };
+		9FCDEA8F1B3A393300D87197 /* WaitingToConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDEA8E1B3A393300D87197 /* WaitingToConnectViewController.m */; };
+		9FCDEA941B3B8BE000D87197 /* PlaylistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDEA931B3B8BE000D87197 /* PlaylistTableViewCell.m */; };
+		9FCDEA971B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDEA961B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.m */; };
+		9FCDEA9A1B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCDEA991B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.m */; };
+		9FCDEA9D1B3CD9BD00D87197 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDEA9B1B3CD9BD00D87197 /* AVFoundation.framework */; };
+		9FCDEA9E1B3CD9BD00D87197 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDEA9C1B3CD9BD00D87197 /* AVKit.framework */; };
+		9FCDEAA31B3CDB3000D87197 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCDEA9F1B3CDB1400D87197 /* AudioToolbox.framework */; };
+		9FD3AD9A1B378B5B00E1B5AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3AD991B378B5B00E1B5AD /* main.m */; };
+		9FD3AD9D1B378B5B00E1B5AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3AD9C1B378B5B00E1B5AD /* AppDelegate.m */; };
+		9FD3ADA01B378B5B00E1B5AD /* AerialMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3AD9E1B378B5B00E1B5AD /* AerialMobile.xcdatamodeld */; };
+		9FD3ADA31B378B5B00E1B5AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3ADA21B378B5B00E1B5AD /* ViewController.m */; };
+		9FD3ADA61B378B5B00E1B5AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FD3ADA41B378B5B00E1B5AD /* Main.storyboard */; };
+		9FD3ADA81B378B5B00E1B5AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD3ADA71B378B5B00E1B5AD /* Images.xcassets */; };
+		9FD3ADAB1B378B5B00E1B5AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FD3ADA91B378B5B00E1B5AD /* LaunchScreen.xib */; };
+		9FD3ADB71B378B5B00E1B5AD /* AerialMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD3ADB61B378B5B00E1B5AD /* AerialMobileTests.m */; };
+		9FD6A5A31B3D24A4006481E3 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FD6A5A21B3D24A4006481E3 /* Images-2.xcassets */; };
+		9FFD29081B3E0B3800B21CA1 /* StationPlaylistTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFD29071B3E0B3800B21CA1 /* StationPlaylistTableViewCell.m */; };
+		AAD896FB3B2C5C94D2EC5B91 /* libPods-AerialMobileTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ECBDE39F5196F397FBB4011 /* libPods-AerialMobileTests.a */; };
+		E57D109323E2223F434F23BE /* PresetStationType.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1B0078E296F16E4CB08C /* PresetStationType.m */; };
+		E57D1163AD0327B9CC561004 /* RadioConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1D387981576C6D0A05E3 /* RadioConnector.m */; };
+		E57D120C7DB2B082A79486C6 /* StationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1E1E73082EDBCB4263F0 /* StationManager.m */; };
+		E57D1354035962258C17C661 /* SoundCloudConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D13C740C362FAAF57584F /* SoundCloudConnector.m */; };
+		E57D13FE30839944668AA2E2 /* RunningAverage.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1EDDFA51E0C6CF9D6B31 /* RunningAverage.m */; };
+		E57D1522C9EC2A7A9BAD604A /* Range.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D10DAA8C2F2C8D893C3FA /* Range.m */; };
+		E57D157AD6CEF880BDE866EE /* AerialSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1578D4A12FF6135EB24A /* AerialSettings.m */; };
+		E57D16B1CC86F2AE06A33546 /* UserStationType.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D19270679C7142012175B /* UserStationType.m */; };
+		E57D16FD54F43188D7C49542 /* StationFrequencyLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1DECDD87D567E201433D /* StationFrequencyLabelView.m */; };
+		E57D19002F5B28AA9D42E137 /* BackgroundStationType.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D18561DA1F0BCFF97A07B /* BackgroundStationType.m */; };
+		E57D19E2596C60262B955F33 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1CAA6943B7B02330644E /* Station.m */; };
+		E57D1A8C9D5928FD6CEE2A88 /* RadioSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D14910246285E390189F0 /* RadioSocketClient.m */; };
+		E57D1ACCC91D8E9A95EFD5AB /* SoundCloudPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D168EC48DC75FE0E5C476 /* SoundCloudPlaylist.m */; };
+		E57D1BEEFBBB4FE1307DD0B9 /* AerialUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D10A7CDDEA14ED9E00DC1 /* AerialUtil.m */; };
+		E57D1DA4AC595B93665BA3C7 /* SoundAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D12D33DF9C9ABA60B90B1 /* SoundAsset.m */; };
+		E57D1E2015F07406532C7E0C /* RangeConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = E57D1DDA7E8F36EE19021681 /* RangeConversion.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9FD3ADB11B378B5B00E1B5AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9FD3AD8C1B378B5B00E1B5AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9FD3AD931B378B5B00E1B5AD;
+			remoteInfo = AerialMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FB1BDE7C4A15BE680C59A68 /* Pods-AerialMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerialMobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerialMobileTests/Pods-AerialMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		38DD614A3C5778FA84152E45 /* Pods-AerialMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerialMobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerialMobile/Pods-AerialMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		3ECBDE39F5196F397FBB4011 /* libPods-AerialMobileTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AerialMobileTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ADD0594330D34042ABD2D3 /* Pods-AerialMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerialMobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AerialMobileTests/Pods-AerialMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65D7072B41CF11BF2EA8F6AB /* Pods-AerialMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AerialMobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-AerialMobile/Pods-AerialMobile.release.xcconfig"; sourceTree = "<group>"; };
+		9F93A1FA1B41DB640022DB88 /* ui-settingsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-settingsIcon@2x.png"; sourceTree = "<group>"; };
+		9F93A1FB1B41DB640022DB88 /* ui-tunerIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-tunerIcon@2x.png"; sourceTree = "<group>"; };
+		9F93A1FC1B41DB640022DB88 /* tuner-smallGreenLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuner-smallGreenLogo.png"; sourceTree = "<group>"; };
+		9F93A1FD1B41DB640022DB88 /* tuner-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuner-bg@2x.png"; sourceTree = "<group>"; };
+		9F93A1FF1B41DB640022DB88 /* tuner-moreStationsIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuner-moreStationsIndicator@2x.png"; sourceTree = "<group>"; };
+		9F93A2001B41DB640022DB88 /* tuner-currentStationIndicator-Shine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuner-currentStationIndicator-Shine@2x.png"; sourceTree = "<group>"; };
+		9F93A2011B41DB640022DB88 /* tuner-currentStationIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tuner-currentStationIndicator@2x.png"; sourceTree = "<group>"; };
+		9F93A20B1B41DCE70022DB88 /* ui-logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ui-logo@2x.png"; sourceTree = "<group>"; };
+		9F93A20F1B41DE840022DB88 /* TunerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TunerViewController.h; path = ../TunerViewController.h; sourceTree = "<group>"; };
+		9F93A2101B41DE840022DB88 /* TunerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TunerViewController.m; path = ../TunerViewController.m; sourceTree = "<group>"; };
+		9F93A2121B41DEFA0022DB88 /* tuner-moreStationsIndicator-left@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tuner-moreStationsIndicator-left@2x.png"; path = "images/tuner-moreStationsIndicator-left@2x.png"; sourceTree = SOURCE_ROOT; };
+		9F93A2141B4233290022DB88 /* tuner-tuningWheelDot@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tuner-tuningWheelDot@2x.png"; path = "images/tuner-tuningWheelDot@2x.png"; sourceTree = SOURCE_ROOT; };
+		9F93A2161B42597B0022DB88 /* tuner-dialwheel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tuner-dialwheel@2x.png"; path = "images/tuner-dialwheel@2x.png"; sourceTree = SOURCE_ROOT; };
+		9FB70E7A1B38DFD700AB875F /* StationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationTableViewCell.h; sourceTree = "<group>"; };
+		9FB70E7B1B38DFD700AB875F /* StationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationTableViewCell.m; sourceTree = "<group>"; };
+		9FB70E7D1B38E13600AB875F /* StationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationsTableViewController.h; sourceTree = "<group>"; };
+		9FB70E7E1B38E13600AB875F /* StationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationsTableViewController.m; sourceTree = "<group>"; };
+		9FCDEA8A1B3A2B1400D87197 /* StationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationDetailsViewController.h; sourceTree = "<group>"; };
+		9FCDEA8B1B3A2B1400D87197 /* StationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationDetailsViewController.m; sourceTree = "<group>"; };
+		9FCDEA8D1B3A393300D87197 /* WaitingToConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitingToConnectViewController.h; sourceTree = "<group>"; };
+		9FCDEA8E1B3A393300D87197 /* WaitingToConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitingToConnectViewController.m; sourceTree = "<group>"; };
+		9FCDEA921B3B8BE000D87197 /* PlaylistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistTableViewCell.h; sourceTree = "<group>"; };
+		9FCDEA931B3B8BE000D87197 /* PlaylistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistTableViewCell.m; sourceTree = "<group>"; };
+		9FCDEA951B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSoundCloudPlaylistViewController.h; sourceTree = "<group>"; };
+		9FCDEA961B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSoundCloudPlaylistViewController.m; sourceTree = "<group>"; };
+		9FCDEA981B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudPlaylistDetailViewController.h; sourceTree = "<group>"; };
+		9FCDEA991B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudPlaylistDetailViewController.m; sourceTree = "<group>"; };
+		9FCDEA9B1B3CD9BD00D87197 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9FCDEA9C1B3CD9BD00D87197 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		9FCDEA9F1B3CDB1400D87197 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		9FCDEAA01B3CDB1400D87197 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		9FD3AD941B378B5B00E1B5AD /* AerialMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerialMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD3AD981B378B5B00E1B5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD3AD991B378B5B00E1B5AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9FD3AD9B1B378B5B00E1B5AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9FD3AD9C1B378B5B00E1B5AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9FD3AD9F1B378B5B00E1B5AD /* AerialMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AerialMobile.xcdatamodel; sourceTree = "<group>"; };
+		9FD3ADA11B378B5B00E1B5AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9FD3ADA21B378B5B00E1B5AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9FD3ADA51B378B5B00E1B5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9FD3ADA71B378B5B00E1B5AD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9FD3ADAA1B378B5B00E1B5AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9FD3ADB01B378B5B00E1B5AD /* AerialMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerialMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD3ADB51B378B5B00E1B5AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD3ADB61B378B5B00E1B5AD /* AerialMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AerialMobileTests.m; sourceTree = "<group>"; };
+		9FD6A5A21B3D24A4006481E3 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		9FFD29061B3E0B3800B21CA1 /* StationPlaylistTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationPlaylistTableViewCell.h; sourceTree = "<group>"; };
+		9FFD29071B3E0B3800B21CA1 /* StationPlaylistTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationPlaylistTableViewCell.m; sourceTree = "<group>"; };
+		DE5F1E51254601E95D20A7F0 /* libPods-AerialMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AerialMobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E57D10A7CDDEA14ED9E00DC1 /* AerialUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AerialUtil.m; sourceTree = "<group>"; };
+		E57D10B69D1B14C621D46FAF /* SoundAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundAsset.h; sourceTree = "<group>"; };
+		E57D10DAA8C2F2C8D893C3FA /* Range.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Range.m; sourceTree = "<group>"; };
+		E57D10FA640581560E9EA8F9 /* SoundCloudConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudConnector.h; sourceTree = "<group>"; };
+		E57D11C1A7D897557D50C91D /* PresetStationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresetStationType.h; sourceTree = "<group>"; };
+		E57D12D33DF9C9ABA60B90B1 /* SoundAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundAsset.m; sourceTree = "<group>"; };
+		E57D133ADAAF30345D451E7D /* IStationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStationType.h; sourceTree = "<group>"; };
+		E57D13C740C362FAAF57584F /* SoundCloudConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudConnector.m; sourceTree = "<group>"; };
+		E57D148E43C71CFDA64359CB /* RunningAverage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunningAverage.h; sourceTree = "<group>"; };
+		E57D14910246285E390189F0 /* RadioSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioSocketClient.m; sourceTree = "<group>"; };
+		E57D14B39EF7ACA53FFBD3A6 /* RadioConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioConnector.h; sourceTree = "<group>"; };
+		E57D14BBCFAD01DE44A6273D /* StationFrequencyLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationFrequencyLabelView.h; sourceTree = "<group>"; };
+		E57D14C06668CED82BFE6736 /* BackgroundStationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundStationType.h; sourceTree = "<group>"; };
+		E57D14CB3163B5FF42FB4BE7 /* AerialSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AerialSettings.h; sourceTree = "<group>"; };
+		E57D1578D4A12FF6135EB24A /* AerialSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AerialSettings.m; sourceTree = "<group>"; };
+		E57D15A71608CB9CB5740BD6 /* StationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationManager.h; sourceTree = "<group>"; };
+		E57D168EC48DC75FE0E5C476 /* SoundCloudPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundCloudPlaylist.m; sourceTree = "<group>"; };
+		E57D18561DA1F0BCFF97A07B /* BackgroundStationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundStationType.m; sourceTree = "<group>"; };
+		E57D18C466930E3019FABC18 /* SoundCloudPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundCloudPlaylist.h; sourceTree = "<group>"; };
+		E57D1916B597265B54E90BBD /* AerialUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AerialUtil.h; sourceTree = "<group>"; };
+		E57D19270679C7142012175B /* UserStationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserStationType.m; sourceTree = "<group>"; };
+		E57D19B6AE4DA465E948B70C /* IRadioConnectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRadioConnectorDelegate.h; sourceTree = "<group>"; };
+		E57D1B0078E296F16E4CB08C /* PresetStationType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresetStationType.m; sourceTree = "<group>"; };
+		E57D1CAA6943B7B02330644E /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		E57D1D387981576C6D0A05E3 /* RadioConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioConnector.m; sourceTree = "<group>"; };
+		E57D1D9BE2A685354B07B4C7 /* ITrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITrack.h; sourceTree = "<group>"; };
+		E57D1DDA7E8F36EE19021681 /* RangeConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeConversion.m; sourceTree = "<group>"; };
+		E57D1DECDD87D567E201433D /* StationFrequencyLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationFrequencyLabelView.m; sourceTree = "<group>"; };
+		E57D1DEFDB880556542ABAC5 /* RadioSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioSocketClient.h; sourceTree = "<group>"; };
+		E57D1DFA09682CEEB6DC0666 /* Station.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		E57D1E1E73082EDBCB4263F0 /* StationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationManager.m; sourceTree = "<group>"; };
+		E57D1E5908A46FE0064FA51B /* UserStationType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserStationType.h; sourceTree = "<group>"; };
+		E57D1EA35D13318AB1709518 /* Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
+		E57D1EDDFA51E0C6CF9D6B31 /* RunningAverage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunningAverage.m; sourceTree = "<group>"; };
+		E57D1F8A1AA81C397B9376A7 /* RangeConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeConversion.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9FD3AD911B378B5B00E1B5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCDEAA31B3CDB3000D87197 /* AudioToolbox.framework in Frameworks */,
+				9FCDEA9D1B3CD9BD00D87197 /* AVFoundation.framework in Frameworks */,
+				9FCDEA9E1B3CD9BD00D87197 /* AVKit.framework in Frameworks */,
+				67112BF0B0872D689F82BFE7 /* libPods-AerialMobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD3ADAD1B378B5B00E1B5AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD896FB3B2C5C94D2EC5B91 /* libPods-AerialMobileTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F93A20A1B41DB710022DB88 /* IMAGES */ = {
+			isa = PBXGroup;
+			children = (
+				9F93A2141B4233290022DB88 /* tuner-tuningWheelDot@2x.png */,
+				9F93A2121B41DEFA0022DB88 /* tuner-moreStationsIndicator-left@2x.png */,
+				9F93A20B1B41DCE70022DB88 /* ui-logo@2x.png */,
+				9F93A1FA1B41DB640022DB88 /* ui-settingsIcon@2x.png */,
+				9F93A1FB1B41DB640022DB88 /* ui-tunerIcon@2x.png */,
+				9F93A1FC1B41DB640022DB88 /* tuner-smallGreenLogo.png */,
+				9F93A1FD1B41DB640022DB88 /* tuner-bg@2x.png */,
+				9F93A2161B42597B0022DB88 /* tuner-dialwheel@2x.png */,
+				9F93A1FF1B41DB640022DB88 /* tuner-moreStationsIndicator@2x.png */,
+				9F93A2001B41DB640022DB88 /* tuner-currentStationIndicator-Shine@2x.png */,
+				9F93A2011B41DB640022DB88 /* tuner-currentStationIndicator@2x.png */,
+			);
+			name = IMAGES;
+			path = AerialMobile;
+			sourceTree = "<group>";
+		};
+		9F93A20D1B41DD720022DB88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F93A20E1B41DD8D0022DB88 /* Fonts */,
+				9F93A20A1B41DB710022DB88 /* IMAGES */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9F93A20E1B41DD8D0022DB88 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		9FD3AD8B1B378B5B00E1B5AD = {
+			isa = PBXGroup;
+			children = (
+				9F93A20D1B41DD720022DB88 /* Resources */,
+				9FD3AD961B378B5B00E1B5AD /* AerialMobile */,
+				9FD3ADB31B378B5B00E1B5AD /* AerialMobileTests */,
+				9FD3AD951B378B5B00E1B5AD /* Products */,
+				EF14A5BD42DBEA9A286A9B2A /* Frameworks */,
+				DFBCFFF58B91689A31551C2B /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		9FD3AD951B378B5B00E1B5AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3AD941B378B5B00E1B5AD /* AerialMobile.app */,
+				9FD3ADB01B378B5B00E1B5AD /* AerialMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9FD3AD961B378B5B00E1B5AD /* AerialMobile */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3AD9B1B378B5B00E1B5AD /* AppDelegate.h */,
+				9FD3AD9C1B378B5B00E1B5AD /* AppDelegate.m */,
+				9FD3ADA11B378B5B00E1B5AD /* ViewController.h */,
+				9FD3ADA21B378B5B00E1B5AD /* ViewController.m */,
+				9FD3ADA41B378B5B00E1B5AD /* Main.storyboard */,
+				9FFD29061B3E0B3800B21CA1 /* StationPlaylistTableViewCell.h */,
+				9FFD29071B3E0B3800B21CA1 /* StationPlaylistTableViewCell.m */,
+				9FCDEA981B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.h */,
+				9FCDEA991B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.m */,
+				9FCDEA921B3B8BE000D87197 /* PlaylistTableViewCell.h */,
+				9FCDEA931B3B8BE000D87197 /* PlaylistTableViewCell.m */,
+				9FCDEA8D1B3A393300D87197 /* WaitingToConnectViewController.h */,
+				9FCDEA8E1B3A393300D87197 /* WaitingToConnectViewController.m */,
+				9FB70E7D1B38E13600AB875F /* StationsTableViewController.h */,
+				9FB70E7E1B38E13600AB875F /* StationsTableViewController.m */,
+				9FD3ADA71B378B5B00E1B5AD /* Images.xcassets */,
+				9FD3ADA91B378B5B00E1B5AD /* LaunchScreen.xib */,
+				9FD3AD9E1B378B5B00E1B5AD /* AerialMobile.xcdatamodeld */,
+				9FD3AD971B378B5B00E1B5AD /* Supporting Files */,
+				9FB70E7A1B38DFD700AB875F /* StationTableViewCell.h */,
+				9FB70E7B1B38DFD700AB875F /* StationTableViewCell.m */,
+				9FCDEA8A1B3A2B1400D87197 /* StationDetailsViewController.h */,
+				9FCDEA8B1B3A2B1400D87197 /* StationDetailsViewController.m */,
+				E57D1B09EACE4FE40B5E51ED /* stations */,
+				E57D1D4B80D367860915DDD7 /* integrations */,
+				9FCDEA951B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.h */,
+				9FCDEA961B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.m */,
+				9FD6A5A21B3D24A4006481E3 /* Images-2.xcassets */,
+				E57D144837E02D2ADE62890A /* tracks */,
+				E57D125989170AE554DE90C1 /* util */,
+				E57D1ABFC1EE6220A5467FFD /* tuner */,
+				E57D1578D4A12FF6135EB24A /* AerialSettings.m */,
+				E57D14CB3163B5FF42FB4BE7 /* AerialSettings.h */,
+			);
+			path = AerialMobile;
+			sourceTree = "<group>";
+		};
+		9FD3AD971B378B5B00E1B5AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3AD981B378B5B00E1B5AD /* Info.plist */,
+				9FD3AD991B378B5B00E1B5AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9FD3ADB31B378B5B00E1B5AD /* AerialMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3ADB61B378B5B00E1B5AD /* AerialMobileTests.m */,
+				9FD3ADB41B378B5B00E1B5AD /* Supporting Files */,
+			);
+			path = AerialMobileTests;
+			sourceTree = "<group>";
+		};
+		9FD3ADB41B378B5B00E1B5AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FD3ADB51B378B5B00E1B5AD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFBCFFF58B91689A31551C2B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38DD614A3C5778FA84152E45 /* Pods-AerialMobile.debug.xcconfig */,
+				65D7072B41CF11BF2EA8F6AB /* Pods-AerialMobile.release.xcconfig */,
+				54ADD0594330D34042ABD2D3 /* Pods-AerialMobileTests.debug.xcconfig */,
+				1FB1BDE7C4A15BE680C59A68 /* Pods-AerialMobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E57D125989170AE554DE90C1 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E57D10A7CDDEA14ED9E00DC1 /* AerialUtil.m */,
+				E57D1916B597265B54E90BBD /* AerialUtil.h */,
+				E57D10DAA8C2F2C8D893C3FA /* Range.m */,
+				E57D1EA35D13318AB1709518 /* Range.h */,
+				E57D1DDA7E8F36EE19021681 /* RangeConversion.m */,
+				E57D1F8A1AA81C397B9376A7 /* RangeConversion.h */,
+				E57D1EDDFA51E0C6CF9D6B31 /* RunningAverage.m */,
+				E57D148E43C71CFDA64359CB /* RunningAverage.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E57D144837E02D2ADE62890A /* tracks */ = {
+			isa = PBXGroup;
+			children = (
+				E57D10B69D1B14C621D46FAF /* SoundAsset.h */,
+				E57D12D33DF9C9ABA60B90B1 /* SoundAsset.m */,
+				E57D1D9BE2A685354B07B4C7 /* ITrack.h */,
+			);
+			path = tracks;
+			sourceTree = "<group>";
+		};
+		E57D1ABFC1EE6220A5467FFD /* tuner */ = {
+			isa = PBXGroup;
+			children = (
+				9F93A20F1B41DE840022DB88 /* TunerViewController.h */,
+				9F93A2101B41DE840022DB88 /* TunerViewController.m */,
+				E57D1DECDD87D567E201433D /* StationFrequencyLabelView.m */,
+				E57D14BBCFAD01DE44A6273D /* StationFrequencyLabelView.h */,
+			);
+			path = tuner;
+			sourceTree = "<group>";
+		};
+		E57D1B09EACE4FE40B5E51ED /* stations */ = {
+			isa = PBXGroup;
+			children = (
+				E57D1CAA6943B7B02330644E /* Station.m */,
+				E57D1DFA09682CEEB6DC0666 /* Station.h */,
+				E57D1E1E73082EDBCB4263F0 /* StationManager.m */,
+				E57D15A71608CB9CB5740BD6 /* StationManager.h */,
+				E57D1D387981576C6D0A05E3 /* RadioConnector.m */,
+				E57D14B39EF7ACA53FFBD3A6 /* RadioConnector.h */,
+				E57D19B6AE4DA465E948B70C /* IRadioConnectorDelegate.h */,
+				E57D1D40684FA6195D1E2E73 /* stationtype */,
+			);
+			path = stations;
+			sourceTree = "<group>";
+		};
+		E57D1D40684FA6195D1E2E73 /* stationtype */ = {
+			isa = PBXGroup;
+			children = (
+				E57D133ADAAF30345D451E7D /* IStationType.h */,
+				E57D18561DA1F0BCFF97A07B /* BackgroundStationType.m */,
+				E57D14C06668CED82BFE6736 /* BackgroundStationType.h */,
+				E57D1B0078E296F16E4CB08C /* PresetStationType.m */,
+				E57D11C1A7D897557D50C91D /* PresetStationType.h */,
+				E57D19270679C7142012175B /* UserStationType.m */,
+				E57D1E5908A46FE0064FA51B /* UserStationType.h */,
+			);
+			path = stationtype;
+			sourceTree = "<group>";
+		};
+		E57D1D4B80D367860915DDD7 /* integrations */ = {
+			isa = PBXGroup;
+			children = (
+				E57D13C740C362FAAF57584F /* SoundCloudConnector.m */,
+				E57D10FA640581560E9EA8F9 /* SoundCloudConnector.h */,
+				E57D168EC48DC75FE0E5C476 /* SoundCloudPlaylist.m */,
+				E57D18C466930E3019FABC18 /* SoundCloudPlaylist.h */,
+				E57D14910246285E390189F0 /* RadioSocketClient.m */,
+				E57D1DEFDB880556542ABAC5 /* RadioSocketClient.h */,
+			);
+			path = integrations;
+			sourceTree = "<group>";
+		};
+		EF14A5BD42DBEA9A286A9B2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9FCDEA9F1B3CDB1400D87197 /* AudioToolbox.framework */,
+				9FCDEAA01B3CDB1400D87197 /* AudioUnit.framework */,
+				9FCDEA9B1B3CD9BD00D87197 /* AVFoundation.framework */,
+				9FCDEA9C1B3CD9BD00D87197 /* AVKit.framework */,
+				DE5F1E51254601E95D20A7F0 /* libPods-AerialMobile.a */,
+				3ECBDE39F5196F397FBB4011 /* libPods-AerialMobileTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9FD3AD931B378B5B00E1B5AD /* AerialMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD3ADBA1B378B5B00E1B5AD /* Build configuration list for PBXNativeTarget "AerialMobile" */;
+			buildPhases = (
+				644231E9EA9607B32A50B89B /* [CP] Check Pods Manifest.lock */,
+				9FD3AD901B378B5B00E1B5AD /* Sources */,
+				9FD3AD911B378B5B00E1B5AD /* Frameworks */,
+				9FD3AD921B378B5B00E1B5AD /* Resources */,
+				3A20E00C0A68CC8F3589C2EF /* [CP] Embed Pods Frameworks */,
+				1524B8A9E81E4239D4FC193C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AerialMobile;
+			productName = AerialMobile;
+			productReference = 9FD3AD941B378B5B00E1B5AD /* AerialMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9FD3ADAF1B378B5B00E1B5AD /* AerialMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FD3ADBD1B378B5B00E1B5AD /* Build configuration list for PBXNativeTarget "AerialMobileTests" */;
+			buildPhases = (
+				B87BAB61150A20CAA6A0E82E /* [CP] Check Pods Manifest.lock */,
+				9FD3ADAC1B378B5B00E1B5AD /* Sources */,
+				9FD3ADAD1B378B5B00E1B5AD /* Frameworks */,
+				9FD3ADAE1B378B5B00E1B5AD /* Resources */,
+				6E7F5BBD5DB504EE97432C97 /* [CP] Embed Pods Frameworks */,
+				D1B62B4CC7580C7A2716404F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FD3ADB21B378B5B00E1B5AD /* PBXTargetDependency */,
+			);
+			name = AerialMobileTests;
+			productName = AerialMobileTests;
+			productReference = 9FD3ADB01B378B5B00E1B5AD /* AerialMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9FD3AD8C1B378B5B00E1B5AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Aero;
+				TargetAttributes = {
+					9FD3AD931B378B5B00E1B5AD = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = RX5Y9E4WS6;
+					};
+					9FD3ADAF1B378B5B00E1B5AD = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 9FD3AD931B378B5B00E1B5AD;
+					};
+				};
+			};
+			buildConfigurationList = 9FD3AD8F1B378B5B00E1B5AD /* Build configuration list for PBXProject "AerialMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9FD3AD8B1B378B5B00E1B5AD;
+			productRefGroup = 9FD3AD951B378B5B00E1B5AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9FD3AD931B378B5B00E1B5AD /* AerialMobile */,
+				9FD3ADAF1B378B5B00E1B5AD /* AerialMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FD3AD921B378B5B00E1B5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F93A2051B41DB650022DB88 /* tuner-bg@2x.png in Resources */,
+				9F93A2081B41DB650022DB88 /* tuner-currentStationIndicator-Shine@2x.png in Resources */,
+				9F93A2031B41DB650022DB88 /* ui-tunerIcon@2x.png in Resources */,
+				9FD3ADA61B378B5B00E1B5AD /* Main.storyboard in Resources */,
+				9FD3ADAB1B378B5B00E1B5AD /* LaunchScreen.xib in Resources */,
+				9F93A2131B41DEFA0022DB88 /* tuner-moreStationsIndicator-left@2x.png in Resources */,
+				9F93A2091B41DB650022DB88 /* tuner-currentStationIndicator@2x.png in Resources */,
+				9F93A2071B41DB650022DB88 /* tuner-moreStationsIndicator@2x.png in Resources */,
+				9FD6A5A31B3D24A4006481E3 /* Images-2.xcassets in Resources */,
+				9F93A2021B41DB640022DB88 /* ui-settingsIcon@2x.png in Resources */,
+				9F93A2041B41DB650022DB88 /* tuner-smallGreenLogo.png in Resources */,
+				9F93A2151B4233290022DB88 /* tuner-tuningWheelDot@2x.png in Resources */,
+				9F93A2171B42597B0022DB88 /* tuner-dialwheel@2x.png in Resources */,
+				9F93A20C1B41DCE70022DB88 /* ui-logo@2x.png in Resources */,
+				9FD3ADA81B378B5B00E1B5AD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD3ADAE1B378B5B00E1B5AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1524B8A9E81E4239D4FC193C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerialMobile/Pods-AerialMobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A20E00C0A68CC8F3589C2EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerialMobile/Pods-AerialMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		644231E9EA9607B32A50B89B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AerialMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E7F5BBD5DB504EE97432C97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerialMobileTests/Pods-AerialMobileTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B87BAB61150A20CAA6A0E82E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AerialMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1B62B4CC7580C7A2716404F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AerialMobileTests/Pods-AerialMobileTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9FD3AD901B378B5B00E1B5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD3AD9D1B378B5B00E1B5AD /* AppDelegate.m in Sources */,
+				9FD3ADA01B378B5B00E1B5AD /* AerialMobile.xcdatamodeld in Sources */,
+				9FCDEA8F1B3A393300D87197 /* WaitingToConnectViewController.m in Sources */,
+				9FCDEA941B3B8BE000D87197 /* PlaylistTableViewCell.m in Sources */,
+				9FD3ADA31B378B5B00E1B5AD /* ViewController.m in Sources */,
+				9FD3AD9A1B378B5B00E1B5AD /* main.m in Sources */,
+				9FB70E7F1B38E13600AB875F /* StationsTableViewController.m in Sources */,
+				9FCDEA9A1B3BA0CE00D87197 /* SoundCloudPlaylistDetailViewController.m in Sources */,
+				9FCDEA8C1B3A2B1400D87197 /* StationDetailsViewController.m in Sources */,
+				9FCDEA971B3B8DEF00D87197 /* SelectSoundCloudPlaylistViewController.m in Sources */,
+				9FFD29081B3E0B3800B21CA1 /* StationPlaylistTableViewCell.m in Sources */,
+				9FB70E7C1B38DFD700AB875F /* StationTableViewCell.m in Sources */,
+				E57D19E2596C60262B955F33 /* Station.m in Sources */,
+				E57D120C7DB2B082A79486C6 /* StationManager.m in Sources */,
+				E57D1163AD0327B9CC561004 /* RadioConnector.m in Sources */,
+				9F93A2111B41DE840022DB88 /* TunerViewController.m in Sources */,
+				E57D1354035962258C17C661 /* SoundCloudConnector.m in Sources */,
+				E57D1ACCC91D8E9A95EFD5AB /* SoundCloudPlaylist.m in Sources */,
+				E57D1DA4AC595B93665BA3C7 /* SoundAsset.m in Sources */,
+				E57D16FD54F43188D7C49542 /* StationFrequencyLabelView.m in Sources */,
+				E57D1BEEFBBB4FE1307DD0B9 /* AerialUtil.m in Sources */,
+				E57D1522C9EC2A7A9BAD604A /* Range.m in Sources */,
+				E57D1E2015F07406532C7E0C /* RangeConversion.m in Sources */,
+				E57D13FE30839944668AA2E2 /* RunningAverage.m in Sources */,
+				E57D157AD6CEF880BDE866EE /* AerialSettings.m in Sources */,
+				E57D19002F5B28AA9D42E137 /* BackgroundStationType.m in Sources */,
+				E57D109323E2223F434F23BE /* PresetStationType.m in Sources */,
+				E57D16B1CC86F2AE06A33546 /* UserStationType.m in Sources */,
+				E57D1A8C9D5928FD6CEE2A88 /* RadioSocketClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FD3ADAC1B378B5B00E1B5AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FD3ADB71B378B5B00E1B5AD /* AerialMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FD3ADB21B378B5B00E1B5AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9FD3AD931B378B5B00E1B5AD /* AerialMobile */;
+			targetProxy = 9FD3ADB11B378B5B00E1B5AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9FD3ADA41B378B5B00E1B5AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD3ADA51B378B5B00E1B5AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9FD3ADA91B378B5B00E1B5AD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9FD3ADAA1B378B5B00E1B5AD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9FD3ADB81B378B5B00E1B5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9FD3ADB91B378B5B00E1B5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9FD3ADBB1B378B5B00E1B5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38DD614A3C5778FA84152E45 /* Pods-AerialMobile.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RX5Y9E4WS6;
+				INFOPLIST_FILE = AerialMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Debug;
+		};
+		9FD3ADBC1B378B5B00E1B5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D7072B41CF11BF2EA8F6AB /* Pods-AerialMobile.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = RX5Y9E4WS6;
+				INFOPLIST_FILE = AerialMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
+			};
+			name = Release;
+		};
+		9FD3ADBE1B378B5B00E1B5AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ADD0594330D34042ABD2D3 /* Pods-AerialMobileTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AerialMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AerialMobile.app/AerialMobile";
+			};
+			name = Debug;
+		};
+		9FD3ADBF1B378B5B00E1B5AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB1BDE7C4A15BE680C59A68 /* Pods-AerialMobileTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AerialMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AerialMobile.app/AerialMobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9FD3AD8F1B378B5B00E1B5AD /* Build configuration list for PBXProject "AerialMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD3ADB81B378B5B00E1B5AD /* Debug */,
+				9FD3ADB91B378B5B00E1B5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD3ADBA1B378B5B00E1B5AD /* Build configuration list for PBXNativeTarget "AerialMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD3ADBB1B378B5B00E1B5AD /* Debug */,
+				9FD3ADBC1B378B5B00E1B5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FD3ADBD1B378B5B00E1B5AD /* Build configuration list for PBXNativeTarget "AerialMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FD3ADBE1B378B5B00E1B5AD /* Debug */,
+				9FD3ADBF1B378B5B00E1B5AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FD3AD9E1B378B5B00E1B5AD /* AerialMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FD3AD9F1B378B5B00E1B5AD /* AerialMobile.xcdatamodel */,
+			);
+			currentVersion = 9FD3AD9F1B378B5B00E1B5AD /* AerialMobile.xcdatamodel */;
+			path = AerialMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9FD3AD8C1B378B5B00E1B5AD /* Project object */;
+}

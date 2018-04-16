@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hello AngularJS</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular-resource/angular-resource.js"></script>
+    <script src="hello.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<div ng-app="app" ng-controller="Hello">
+    <!--<p>The ID is {{greeting}}</p>-->
+    <h2><div class="label label-info" ng-bind="currentFreq + 'kHz'">...</div></h2>
+    <div class="container">
+        <div ng-repeat="item in stationList | orderBy:'+frequency'">
+            <!--<div><input type="text" ng-model="item.frequency"></div>-->
+            <h4>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div ng-if = "item == currentStation">
+                            <div ng-bind="item.frequency" class="label label-danger">loading..</div>
+                        </div>
+
+                        <div ng-if = "item != currentStation">
+                            <div ng-if = "item.type == 'class aero.aerial.radiostation.SoundAssetRadioStation'">
+                                <div ng-bind="item.frequency" class="label label-primary">loading..</div>
+                            </div>
+                            <div ng-if = "item.type == 'class aero.aerial.radiostation.ToneRadioStation' || item.type == 'class aero.aerial.radiostation.BeepingToneRadioStation'">
+                                <div ng-bind="item.frequency" class="label label-default">loading..</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div ng-bind="item.title"></div>
+                        <div ng-bind="item.playing"></div>
+                    </div>
+                    <!--<div class="col-md-2"><button ng-click="getMoreInfo(item)"></button></div>-->
+                </div>
+            </h4>
+        </div>
+    </div>
+</div>
+</body>
+</html>

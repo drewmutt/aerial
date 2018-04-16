@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="aerialintellij" default="all">
+  
+  
+  <property file="aerialintellij.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.tox/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.zip"/>
+    <include name="*.apk"/>
+    <include name="*.war"/>
+    <include name="*.egg"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.swc"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="lib/ant-javafx.jar"/>
+      <include name="lib/dt.jar"/>
+      <include name="lib/javafx-mx.jar"/>
+      <include name="lib/jconsole.jar"/>
+      <include name="lib/packager.jar"/>
+      <include name="lib/sa-jdi.jar"/>
+      <include name="lib/tools.jar"/>
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.lib.classpath">
+    <pathelement location="${basedir}/lib/apache-mime4j-0.6.jar"/>
+    <pathelement location="${basedir}/lib/commons-codec-1.3.jar"/>
+    <pathelement location="${basedir}/lib/commons-logging-1.1.1.jar"/>
+    <pathelement location="${basedir}/lib/dxf.jar"/>
+    <pathelement location="${basedir}/lib/dxfviewer.jar"/>
+    <pathelement location="${basedir}/lib/gson-2.3.1.jar"/>
+    <pathelement location="${basedir}/lib/httpclient-4.0.jar"/>
+    <pathelement location="${basedir}/lib/httpcore-4.0.1.jar"/>
+    <pathelement location="${basedir}/lib/httpmime-4.0.jar"/>
+    <pathelement location="${basedir}/lib/jackson-annotations-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-core-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-databind-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-dataformat-csv-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-dataformat-smile-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-dataformat-xml-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-dataformat-yaml-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-module-jaxb-annotations-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/jackson-module-jsonSchema-2.4.4.jar"/>
+    <pathelement location="${basedir}/lib/javax.servlet-api-3.1.0.jar"/>
+    <pathelement location="${basedir}/lib/jetty-alpn-client-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jetty-client-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jetty-http-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jetty-io-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jetty-server-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jetty-util-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/jl1.0.jar"/>
+    <pathelement location="${basedir}/lib/jsminim.jar"/>
+    <pathelement location="${basedir}/lib/jssc.jar"/>
+    <pathelement location="${basedir}/lib/minim.jar"/>
+    <pathelement location="${basedir}/lib/mp3spi1.9.4.jar"/>
+    <pathelement location="${basedir}/lib/org.restlet-2.3.2.jar"/>
+    <pathelement location="${basedir}/lib/org.restlet.ext.jackson-2.3.2.jar"/>
+    <pathelement location="${basedir}/lib/org.restlet.ext.jetty-2.3.2.jar"/>
+    <pathelement location="${basedir}/lib/org.urbanstew.soundcloudapi-1.0.0.jar"/>
+    <pathelement location="${basedir}/lib/serial.jar"/>
+    <pathelement location="${basedir}/lib/signpost-commonshttp4-1.2.1.1.jar"/>
+    <pathelement location="${basedir}/lib/signpost-core-1.2.1.2.jar"/>
+    <pathelement location="${basedir}/lib/snakeyaml-1.13.jar"/>
+    <pathelement location="${basedir}/lib/spdy-client-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/spdy-core-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/spdy-http-common-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/spdy-http-server-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/spdy-server-9.2.6.v20141205.jar"/>
+    <pathelement location="${basedir}/lib/stax-api-1.0-2.jar"/>
+    <pathelement location="${basedir}/lib/stax2-api-3.1.4.jar"/>
+    <pathelement location="${basedir}/lib/tritonus_aos.jar"/>
+    <pathelement location="${basedir}/lib/tritonus_share.jar"/>
+    <pathelement location="${basedir}/lib/woodstox-core-asl-4.3.0.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module Aerial1 -->
+  
+  <dirname property="module.aerial1.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.aerial1" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.aerial1" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.aerial1" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.aerial1" value="-encoding UTF-8 -source 8 ${compiler.args}"/>
+  
+  <property name="aerial1.output.dir" value="${module.aerial1.basedir}/out/production/Aerial1"/>
+  <property name="aerial1.testoutput.dir" value="${module.aerial1.basedir}/out/test/Aerial1"/>
+  
+  <path id="aerial1.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="aerial1.module.production.classpath">
+    <path refid="${module.jdk.classpath.aerial1}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aerial1.runtime.production.module.classpath">
+    <pathelement location="${aerial1.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aerial1.module.classpath">
+    <path refid="${module.jdk.classpath.aerial1}"/>
+    <pathelement location="${aerial1.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  <path id="aerial1.runtime.module.classpath">
+    <pathelement location="${aerial1.testoutput.dir}"/>
+    <pathelement location="${aerial1.output.dir}"/>
+    <path refid="library.lib.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.aerial1">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.aerial1">
+    <patternset refid="excluded.from.module.aerial1"/>
+  </patternset>
+  
+  <path id="aerial1.module.sourcepath">
+    <dirset dir="${module.aerial1.basedir}">
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.aerial1" depends="compile.module.aerial1.production,compile.module.aerial1.tests" description="Compile module Aerial1"/>
+  
+  <target name="compile.module.aerial1.production" depends="register.custom.compilers" description="Compile module Aerial1; production classes">
+    <mkdir dir="${aerial1.output.dir}"/>
+    <javac2 destdir="${aerial1.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.aerial1}/javac">
+      <compilerarg line="${compiler.args.aerial1}"/>
+      <bootclasspath refid="aerial1.module.bootclasspath"/>
+      <classpath refid="aerial1.module.production.classpath"/>
+      <src refid="aerial1.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.aerial1"/>
+    </javac2>
+    
+    <copy todir="${aerial1.output.dir}">
+      <fileset dir="${module.aerial1.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.aerial1.tests" depends="register.custom.compilers,compile.module.aerial1.production" description="compile module Aerial1; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.aerial1" description="cleanup module">
+    <delete dir="${aerial1.output.dir}"/>
+    <delete dir="${aerial1.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.aerial1" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.aerial1" description="build all modules"/>
+  
+  <target name="init.artifacts">
+    <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
+    <property name="artifact.output.aerial1:jar" value="${basedir}"/>
+    <mkdir dir="${artifacts.temp.dir}"/>
+    <property name="temp.jar.path.Aerial1.jar" value="${artifacts.temp.dir}/Aerial1.jar"/>
+  </target>
+  
+  <target name="artifact.aerial1:jar" depends="init.artifacts, compile.module.aerial1" description="Build &#39;Aerial1:jar&#39; artifact">
+    <property name="artifact.temp.output.aerial1:jar" value="${artifacts.temp.dir}/Aerial1_jar"/>
+    <mkdir dir="${artifact.temp.output.aerial1:jar}"/>
+    <jar destfile="${temp.jar.path.Aerial1.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+      <zipfileset file="${basedir}/src/main/resources/META-INF/MANIFEST.MF" prefix="META-INF"/>
+      <zipfileset dir="${aerial1.output.dir}"/>
+      <zipfileset src="${basedir}/lib/httpclient-4.0.jar"/>
+      <zipfileset src="${basedir}/lib/jsminim.jar"/>
+      <zipfileset src="${basedir}/lib/tritonus_aos.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-module-jaxb-annotations-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/stax2-api-3.1.4.jar"/>
+      <zipfileset src="${basedir}/lib/spdy-client-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/snakeyaml-1.13.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-dataformat-yaml-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-core-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/dxfviewer.jar"/>
+      <zipfileset src="${basedir}/lib/apache-mime4j-0.6.jar"/>
+      <zipfileset src="${basedir}/lib/org.restlet.ext.jetty-2.3.2.jar"/>
+      <zipfileset src="${basedir}/lib/httpcore-4.0.1.jar"/>
+      <zipfileset src="${basedir}/lib/jl1.0.jar"/>
+      <zipfileset src="${basedir}/lib/jssc.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-client-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/spdy-server-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/dxf.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-dataformat-xml-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/spdy-http-server-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/stax-api-1.0-2.jar"/>
+      <zipfileset src="${basedir}/lib/serial.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-util-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/mp3spi1.9.4.jar"/>
+      <zipfileset src="${basedir}/lib/signpost-core-1.2.1.2.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-http-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/commons-logging-1.1.1.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-server-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/spdy-http-common-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/signpost-commonshttp4-1.2.1.1.jar"/>
+      <zipfileset src="${basedir}/lib/woodstox-core-asl-4.3.0.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-databind-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-module-jsonSchema-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/org.restlet.ext.jackson-2.3.2.jar"/>
+      <zipfileset src="${basedir}/lib/org.restlet-2.3.2.jar"/>
+      <zipfileset src="${basedir}/lib/httpmime-4.0.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-dataformat-smile-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/org.urbanstew.soundcloudapi-1.0.0.jar"/>
+      <zipfileset src="${basedir}/lib/spdy-core-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-io-9.2.6.v20141205.jar"/>
+      <zipfileset src="${basedir}/lib/tritonus_share.jar"/>
+      <zipfileset src="${basedir}/lib/javax.servlet-api-3.1.0.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-dataformat-csv-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/jackson-annotations-2.4.4.jar"/>
+      <zipfileset src="${basedir}/lib/commons-codec-1.3.jar"/>
+      <zipfileset src="${basedir}/lib/minim.jar"/>
+      <zipfileset src="${basedir}/lib/jetty-alpn-client-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/httpclient-4.0.jar"/>
+      <zipfileset file="${basedir}/lib/jsminim.jar"/>
+      <zipfileset file="${basedir}/lib/tritonus_aos.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-module-jaxb-annotations-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/stax2-api-3.1.4.jar"/>
+      <zipfileset file="${basedir}/lib/spdy-client-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/snakeyaml-1.13.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-dataformat-yaml-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-core-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/dxfviewer.jar"/>
+      <zipfileset file="${basedir}/lib/apache-mime4j-0.6.jar"/>
+      <zipfileset file="${basedir}/lib/org.restlet.ext.jetty-2.3.2.jar"/>
+      <zipfileset file="${basedir}/lib/httpcore-4.0.1.jar"/>
+      <zipfileset file="${basedir}/lib/jl1.0.jar"/>
+      <zipfileset file="${basedir}/lib/jssc.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-client-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/spdy-server-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/dxf.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-dataformat-xml-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/spdy-http-server-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/stax-api-1.0-2.jar"/>
+      <zipfileset file="${basedir}/lib/serial.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-util-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/mp3spi1.9.4.jar"/>
+      <zipfileset file="${basedir}/lib/signpost-core-1.2.1.2.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-http-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/commons-logging-1.1.1.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-server-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/spdy-http-common-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/signpost-commonshttp4-1.2.1.1.jar"/>
+      <zipfileset file="${basedir}/lib/woodstox-core-asl-4.3.0.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-databind-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-module-jsonSchema-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/org.restlet.ext.jackson-2.3.2.jar"/>
+      <zipfileset file="${basedir}/lib/org.restlet-2.3.2.jar"/>
+      <zipfileset file="${basedir}/lib/httpmime-4.0.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-dataformat-smile-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/org.urbanstew.soundcloudapi-1.0.0.jar"/>
+      <zipfileset file="${basedir}/lib/spdy-core-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-io-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/tritonus_share.jar"/>
+      <zipfileset file="${basedir}/lib/javax.servlet-api-3.1.0.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-dataformat-csv-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/jackson-annotations-2.4.4.jar"/>
+      <zipfileset file="${basedir}/lib/commons-codec-1.3.jar"/>
+      <zipfileset file="${basedir}/lib/minim.jar"/>
+      <zipfileset file="${basedir}/lib/jetty-alpn-client-9.2.6.v20141205.jar"/>
+      <zipfileset file="${basedir}/lib/gson-2.3.1.jar"/>
+      <zipfileset src="${basedir}/lib/gson-2.3.1.jar"/>
+    </jar>
+    <copy file="${temp.jar.path.Aerial1.jar}" tofile="${artifact.temp.output.aerial1:jar}/Aerial1.jar"/>
+  </target>
+  
+  <target name="build.all.artifacts" depends="artifact.aerial1:jar" description="Build all artifacts">
+    <mkdir dir="${artifact.output.aerial1:jar}"/>
+    <copy todir="${artifact.output.aerial1:jar}">
+      <fileset dir="${artifact.temp.output.aerial1:jar}"/>
+    </copy>
+    
+    <!-- Delete temporary files -->
+    <delete dir="${artifacts.temp.dir}"/>
+  </target>
+  
+  <target name="all" depends="build.modules, build.all.artifacts" description="build all"/>
+</project>

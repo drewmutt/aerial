@@ -1,0 +1,83 @@
+{
+  "stations":
+  [
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "Welcome to Radio",
+      "frequency":550,
+      "soundAssets":[
+        { "fileName": "avalanchesradio.mp3"},
+        { "fileName": "howRadioWorks.mp3"},
+        { "fileName": "felixhousecat_radio.mp3"}
+      ],
+      "shufflePlaylist": false
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "Old Timey 1",
+      "frequency":750,
+      "soundAssets":[
+        { "fileName": "howRadioWorks.mp3"},
+        { "fileName": "vinScully.mp3"},
+        { "fileName": "1940sradiocuba.mp3"},
+        { "fileName": "sambaFun.mp3"},
+        { "fileName": "jackbennyradio.mp3"},
+        { "fileName": "oldtimeymusic.mp3"},
+        { "fileName": "oldtimeymusic2.mp3"},
+        { "fileName": "mariaYudina1.mp3"}
+      ],
+      "shufflePlaylist": true
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "Number Station",
+      "frequency":950,
+      "soundAssets":[
+        { "fileName": "numberstation.mp3"}
+      ],
+      "shufflePlaylist": true
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "Classicx",
+      "frequency":1150,
+      "soundAssets":[
+        { "fileName": "roadToNowhere.mp3"}
+      ],
+      "shufflePlaylist": true
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "Wild Werst",
+      "frequency":1250,
+      "soundAssets":[
+        { "fileName": "gunslinger.mp3"}
+      ],
+      "shufflePlaylist": true
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "New Timey",
+      "frequency":1350,
+      "soundAssets":[
+        { "fileName": "40watt.mp3"},
+        { "fileName": "bills.mp3"},
+        { "fileName": "onemoretime.mp3"},
+        { "fileName": "psbGo.mp3"},
+        { "fileName": "beatdrum.mp3"}
+      ],
+      "shufflePlaylist": true
+    },
+    {
+      "type":"SoundAssetRadioStation",
+      "title": "New Talkie",
+      "frequency":1450,
+      "soundAssets":[
+        { "fileName": "fiasco.mp3"},
+        { "fileName": "thatalife_am.mp3"},
+        { "fileName": "onemoretime.mp3"},
+      ],
+      "shufflePlaylist": true
+    }
+  ]
+ }

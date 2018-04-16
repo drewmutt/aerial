@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!-- Latest compiled and minified CSS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Hi!</title>
+
+    <script>
+        $(document).ready(function(){
+
+
+//            testJson = "{\"playlists\":[[{\"title\":[\"DownBeaty\"]},{\"title\":[\"SomethingToBeSaid\"]},{\"title\":[\"SweetieCakes\"]},{\"title\":[\"Please Hold\"]},{\"title\":[\"Potential Set\"]},{\"title\":[\"FaceMelty\"]},{\"title\":[\"DanceIndieIfYouWantTo\"]},{\"title\":[\"FunkyTimeLemonade\"]},{\"title\":[\"WorldWideWedding_CockAndBallzHour\"]},{\"title\":[\"Smoothie Cakes\"]},{\"title\":[\"Whole Buncha Who Haw\"]},{\"title\":[\"Bumpin Sets\"]},{\"title\":[\"Zwinkin Atchu\"]},{\"title\":[\"Janelles\"]},{\"title\":[\"Janelles Game Night\"]}]]}";
+
+//            var response = $.parseJSON(testJson);
+
+//            var itemList = $("#output").append("<ul class='list-group'></ul>");
+
+//            $.each( response.playlists[0], function( key, val )
+//            {
+//                itemList.append("<li class='list-group-item'> Item " + key + ":"+ val.title +"</li>");
+//            });
+
+            var user,pass;
+            $("#submit").click(function(){
+                user=$("#username").val();
+                $.post("http://192.168.2.2/login",{username: user,password: pass}, function(data){
+//                    if(data==='done')
+//                    {
+                        alert("login success");
+                    console.log(data);
+                    var response = $.parseJSON(data);
+
+                    var itemList = $("#output").append("<ul class='list-group'></ul>");
+
+                    $.each( response.playlists[0], function( key, val )
+                    {
+                        freq = val.freq;
+                        if(freq!=0)
+                            itemList.append("<li class='list-group-item'> "+val.title +" <span class=\"label label-default\">" + freq + " kHZ</span></li>");
+                        else
+                            itemList.append("<li class='list-group-item'> "+val.title +"</li>");
+
+                        html = ""
+                    });
+//                    for (var i = 0; i < 10; i++)
+//                    {
+
+//                        itemList.append("<li class='list-group-item'> Item " + i + "</li>");
+//                    <li class="list-group-item">Cras justo odio</li>
+//                    <li class="list-group-item">Dapibus ac facilisis in</li>
+//                    <li class="list-group-item">Morbi leo risus</li>
+//                    <li class="list-group-item">Porta ac consectetur ac</li>
+//                    <li class="list-group-item">Vestibulum at eros</li>
+//                    </ul>");
+//                    }
+
+
+//                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Aerial</h1>
+    <input type="TEXT" id="username" size="40"><br>
+    <!--<input type="password" id="password" size="40"><br>-->
+    <input type="button" id="submit" value="Submit">
+    <div id = "output"></div>
+</body>
+</html>
